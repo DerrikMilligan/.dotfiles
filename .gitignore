@@ -1,0 +1,8 @@
+
+# Remove variety stuff that's not needed but will get added
+./variety/.config/variety/variety.log
+./variety/.config/variety/history.log
+./variety/.config/variety/.last_change_time
+./variety/.config/variety/wallpaper/
+./variety/.config/variety/Fetched/
+./variety/.config/variety/Downloaded/

@@ -26,3 +26,6 @@ This will update the sub-modules
 # Update all the sub-module repos
 git submodule update --init --recursive
 ```
+
+# Left WM
+In order to use the leftwm config you'll need to run `./setup-rofi.sh` first!

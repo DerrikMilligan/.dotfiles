@@ -1,0 +1,73 @@
+
+alt + shift + q
+  ~/.config/rofi/powermenu/type-5/powermenu.sh
+
+alt + Return
+  alacritty
+
+# Volume Stuff
+alt + v
+  pavucontrol
+
+# File-Manager
+alt + shift + Return
+	thunar
+
+super + shift + d
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+# rofi
+alt + d
+  ~/.config/rofi/launchers/type-7/launcher.sh
+
+alt + f
+  leftwm-command ToggleFullScreen
+
+# reload sxhkd
+ctrl + shift + r
+	pkill -USR1 -x sxhkd
+
+# Screenshot portion of screen
+alt + shift + s
+  maim -s | xclip -selection clipboard -t image/png -i
+
+# # Xfce4-settings-manager
+# ctrl + alt + m
+#   xfce4-settings-manager
+
+# Wallpaper trash
+alt + Up
+  variety -t
+
+# Wallpaper next
+alt + Right
+  variety -n
+
+# Wallpaper previous
+alt + Left
+  variety -p
+
+#Wallpaper favorite
+alt + Down
+  variety -f
+
+# #Wallpaper toggle-pause
+# alt + Up
+#   variety --toggle-pause
+# 
+# #Wallpaper resume
+# alt + Down
+#   variety --resume
+# 
+# #Xcfe4-TaskManager
+# ctrl + shift + Escape
+#   xfce4-taskmanager
+# 
+# #Hide polybar
+# super + y
+#   polybar-msg cmd toggle
+#
+# #Picom Toggle
+# ctrl + alt + o
+#   ~/.config/leftwm/scripts/picom-toggle.sh
+

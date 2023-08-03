@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo pacman -S neovim stow ttf-monoid-nerd
+sudo pacman -S neovim stow ttf-monoid-nerd barrier
 
 stow bash
 

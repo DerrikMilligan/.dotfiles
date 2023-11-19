@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Custom prompt
+source ~/.prompt
+
+# Add the scripts dir to the path
+export PATH="$HOME/scripts:$PATH"
+
+# Keychain to manage ssh keys
+eval `keychain --quiet --eval id_rsa`
+
+# Load a work bash file if it exists
+[[ -f ~/.bashrc-work ]] && . ~/.bashrc-work
+

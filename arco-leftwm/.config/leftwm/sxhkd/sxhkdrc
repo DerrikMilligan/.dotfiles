@@ -51,6 +51,14 @@ alt + Left
 alt + Down
   variety -f
 
+# Toggle input for dell monitor 2
+ctrl + shift + F11
+  ~/scripts/toggle-dell-monitor-input.sh 2
+
+# Toggle input for dell monitor 1
+ctrl + shift + F12
+  ~/scripts/toggle-dell-monitor-input.sh 1
+
 # #Wallpaper toggle-pause
 # alt + Up
 #   variety --toggle-pause

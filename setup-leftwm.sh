@@ -40,3 +40,13 @@ stow arco-leftwm
 rm -rf ~/.config/variety/
 stow variety
 
+
+# -----------------------------------------------------------------------------
+# Fixes
+# -----------------------------------------------------------------------------
+
+OLDBROWSER="$BROWSER"
+unet BROWSER
+xdg-settings set default-url-scheme-handler https firefox.desktop
+xdg-settings set default-url-scheme-handler http firefox.desktop
+export BROWSER="$OLDBROWSER"

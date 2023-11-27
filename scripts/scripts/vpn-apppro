@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    # Prompt the user to enter the input
+    read -p "Enter six-digit code: " code
+else
+    code=$1
+fi
+
+if ! [[ $code =~ ^[0-9]{6}$ ]];
+then echo "six-digit code should only be numbers (no letters) and be exacly six digits long." >&2;
+exit 1
+fi
+
+# Retrieve the saved password from Network Manager
+password=$(nmcli connection show vpn0.applicantpro.io -s | grep vpn.secrets | awk '{print $4}')
+
+# Replace the last six characters of the password with the entered code
+password=${password::-6}$code
+
+# Update the saved password in Network Manager
+nmcli connection modify vpn0.applicantpro.io vpn.secrets "password=$password"
+
+# Connect to the VPN server using the modified password
+nmcli connection up vpn0.applicantpro.io

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo rm /usr/bin/php && sudo ln -s /usr/bin/php74 /usr/bin/php

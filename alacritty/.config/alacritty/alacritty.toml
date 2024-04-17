@@ -1,0 +1,30 @@
+import = ["/home/derrik/.config/alacritty/themes/themes/monokai_charcoal.toml"]
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "MonoidNerdFont"
+style = "Bold"
+
+[font.bold_italic]
+family = "monospace"
+style = "Bold Italic"
+
+[font.italic]
+family = "MonoidNerdFont"
+style = "Italic"
+
+[font.normal]
+family = "MonoidNerdFont"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+
+[scrolling]
+history = 50000
+
+[window]
+opacity = 0.8
